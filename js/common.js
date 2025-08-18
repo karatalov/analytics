@@ -23,4 +23,25 @@ $(function () {
 	})
 
 	// reviews tabs
+
+	// yakor
+	$('a.yakor').on('click', function (event) {
+		var $anchor = $(this)
+		$('html, body')
+			.stop()
+			.animate(
+				{
+					scrollTop: $($anchor.attr('href')).offset().top - 57,
+				},
+				{
+					duration: 3000,
+					specialEasing: {
+						width: 'linear',
+						hight: 'easeInOutCubic',
+					},
+				}
+			)
+		event.preventDefault()
+	})
+	// yakor
 })

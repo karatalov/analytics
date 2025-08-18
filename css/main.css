@@ -645,4 +645,18 @@ section.information .right_info > .descr {
   transform: translateY(-9px) rotate(-45deg);
 }
 
+.animate-graphic {
+  transition: none;
+  animation: 2s infinite alternate movingAn;
+}
+
+@keyframes movingAn {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(10px, 0px);
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
